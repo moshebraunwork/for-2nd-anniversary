@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Anniversary Shaindy ❤️</title>
+  <style>
+    :root {
+      --bg1: #fff7f8;
+      --bg2: #ffeef5;
+      --ink: #2b2b2b;
+      --muted: #6b6b6b;
+      --accent: #c56bff;
+      --accent-2: #ff8fab;
+      --gold: #c6a34f;
+      --card: #ffffff;
+      --shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: radial-gradient(1200px 800px at 10% 10%, var(--bg2), transparent 60%),
+                  radial-gradient(1000px 700px at 90% 0%, #eef8ff, transparent 60%),
+                  linear-gradient(180deg, var(--bg1), #fff);
+    }
+
+    .frame {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+
+    .card {
+      width: min(900px, 100%);
+      background: var(--card);
+      border-radius: 24px;
+      padding: clamp(20px, 4vw, 48px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(198,163,79,0.18);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -40% -40% auto auto;
+      height: 200px;
+      width: 200px;
+      background: conic-gradient(from 90deg, rgba(197,107,255,0.15), rgba(255,143,171,0.15), rgba(198,163,79,0.15));
+      filter: blur(30px);
+      transform: rotate(25deg);
+      pointer-events: none;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+      background: linear-gradient(180deg, #fff, #faf7ff);
+      border: 1px solid rgba(197,107,255,0.25);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .print-btn {
+      margin-left: auto;
+      border: 1px solid rgba(198,163,79,0.45);
+      background: linear-gradient(180deg, #fff, #fff8ea);
+      color: #6b540c;
+      padding: 8px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .print-btn:hover { filter: brightness(0.98); }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      line-height: 1.1;
+      margin: 10px 0 8px;
+      letter-spacing: 0.2px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: clamp(14px, 2vw, 18px);
+      margin: 0 0 8px 0;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(198,163,79,0.7), transparent);
+      margin: 18px 0 10px;
+    }
+
+    .flourish {
+      display: grid;
+      place-items: center;
+      margin: 8px 0 22px;
+    }
+
+    .flourish svg { height: 24px; }
+
+    .message {
+      font-size: clamp(16px, 2.3vw, 20px);
+      line-height: 1.75;
+      white-space: pre-wrap;
+    }
+
+    .signature {
+      margin-top: 22px;
+      font-weight: 700;
+      color: #4b3b0d;
+      display: inline-block;
+      background: linear-gradient(90deg, #c6a34f, #ff8fab, #c56bff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .confetti {
+      position: fixed;
+      pointer-events: none;
+      inset: 0;
+      z-index: 100;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .frame { padding: 0; }
+      .card { box-shadow: none; border-radius: 0; width: 100%; border: none; }
+      .print-btn, .badge { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+  <main class="frame">
+    <article class="card" role="article" aria-label="Anniversary Card">
+      <div class="topbar">
+        <span class="badge" title="Mazal Tov!">🎉 Happy Anniversary</span>
+        
+      </div>
+
+      <header>
+        <h1>Happy Anniversary, Shaindy ❤️</h1>
+        <p class="subtitle">With all my love, Moshe</p>
+        <div class="divider"></div>
+        <div class="flourish" aria-hidden="true">
+          <svg viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 10 C 40 0, 60 20, 100 10 C 140 0, 160 20, 195 10" stroke="url(#g)" stroke-width="2" />
+            <defs>
+              <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0%" stop-color="#c6a34f"/>
+                <stop offset="50%" stop-color="#ff8fab"/>
+                <stop offset="100%" stop-color="#c56bff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </header>
+
+      <section class="message">
+To my wife Shaindy, I want to wish you a happy anniversary 🎉
+I want to take the opportunity to thank you for everything you do for me. It makes me feel emotional even thinking about how far we’ve come in life. We couldn’t have gone this far without your kindness and love.
+In the past two years, we had quite a few times when things could have gone wrong and broken us, but your warm hand always made it so smooth. Your listening ear changed my life.
+When we were in the hospital or at the doctor’s, we felt like the world stopped and that we were stuck, but Hashem helped us and always showed us the way forward. He gave us good jobs, made us pregnant, and is blessing us with health, money, and love.
+You always supported me and showed me how much you love me. Thank you for this wonderful relationship and for the adult family life you share with me!
+Thank You, Hashem, for always holding our hands!
+
+<strong class="signature">Mazal Tov, Shaindy, Moshe, and Baby.</strong>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    (function confettiBurst() {
+      const cvs = document.getElementById('confetti');
+      const ctx = cvs.getContext('2d');
+      let w, h, pieces = [], running = false;
+
+      function resize() {
+        w = cvs.width = window.innerWidth;
+        h = cvs.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize, { passive: true });
+      resize();
+
+      function spawn(count = 140) {
+        for (let i = 0; i < count; i++) {
+          pieces.push({
+            x: Math.random() * w,
+            y: -10,
+            r: 6 + Math.random() * 10,
+            t: Math.random() * 2 * Math.PI,
+            s: 1 + Math.random() * 3,
+            a: 0.8 + Math.random() * 0.2,
+            hue: Math.random() * 360,
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        for (const p of pieces) {
+          p.y += p.s;
+          p.x += Math.sin(p.t += 0.03) * 1.5;
+          ctx.globalAlpha = p.a;
+          ctx.fillStyle = `hsl(${p.hue}, 90%, 60%)`;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        pieces = pieces.filter(p => p.y < h + 20);
+        if (pieces.length || running) requestAnimationFrame(draw);
+      }
+
+      function burst() {
+        spawn(220);
+        if (!running) { running = true; draw(); setTimeout(()=> running = false, 2000); }
+      }
+
+      window.addEventListener('load', burst, { once: true });
+      document.addEventListener('click', burst);
+      document.addEventListener('keydown', (e) => { if (e.key === ' ') burst(); });
+    })();
+  </script>
+</body>
+</html>
 
